@@ -1,0 +1,78 @@
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    background-color: #fffdf8;
+    color: #333;
+  }
+  
+  h1, h2 {
+    font-family: 'Playfair Display', serif;
+    color: #5b3e31;
+  }
+  
+  header {
+    background-color: #f8e8dc;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  header nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  header nav a {
+    text-decoration: none;
+    color: #5b3e31;
+    font-weight: bold;
+  }
+  
+  main.contenedor-recetas {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+    padding: 30px;
+  }
+  
+  .receta {
+    background-color: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 0 8px rgba(0,0,0,0.1);
+    transition: transform 0.2s ease;
+  }
+  
+  .receta:hover {
+    transform: scale(1.02);
+  }
+  
+  .receta img {
+    width: 100%;
+    display: block;
+  }
+  
+  .receta h2 {
+    margin: 15px;
+  }
+  
+  .receta p {
+    margin: 0 15px 15px 15px;
+  }
+  
+  footer {
+    background-color: #f8e8dc;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+  }
+  
+  footer .redes a {
+    color: #5b3e31;
+    text-decoration: none;
+    margin: 0 5px;
+  }
+  
