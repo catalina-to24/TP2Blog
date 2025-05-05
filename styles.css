@@ -15,7 +15,7 @@ body {
   
   header {
     background-color: #f8e8dc;
-    padding: 20px;
+    padding: 5px;
     text-align: center;
   }
   
@@ -38,14 +38,19 @@ body {
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     gap: 20px;
     padding: 30px;
+    padding-bottom: 165px;
   }
   
   .receta {
     background-color: #fff;
     border-radius: 10px;
-    box-shadow: 0 0 8px rgba(0,0,0,0.1);
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
     transition: transform 0.2s ease;
     text-align: center;
+    padding: 20px;  
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
   }
   
   .receta:hover {
