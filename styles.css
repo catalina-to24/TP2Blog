@@ -1,14 +1,16 @@
-
 body {
     font-family: 'Open Sans', sans-serif;
     margin: 0;
     background-color: #fffdf8;
     color: #333;
+    height: 100%;
+
   }
   
   h1, h2 {
     font-family: 'Playfair Display', serif;
     color: #5b3e31;
+    text-align: center;
   }
   
   header {
@@ -41,9 +43,9 @@ body {
   .receta {
     background-color: #fff;
     border-radius: 10px;
-    overflow: hidden;
     box-shadow: 0 0 8px rgba(0,0,0,0.1);
     transition: transform 0.2s ease;
+    text-align: center;
   }
   
   .receta:hover {
@@ -63,11 +65,27 @@ body {
     margin: 0 15px 15px 15px;
   }
   
+  .btn {
+    display: inline-block;
+    background-color: #5b3e31; 
+    color: #fff; 
+    text-decoration: none; 
+    padding: 10px 20px; 
+    border-radius: 5px; 
+    font-weight: bold; 
+    text-align: center; 
+    transition: background-color 0.3s ease, transform 0.2s ease; 
+  }
+  
+  .btn:hover {
+    background-color: #8c5b4a; 
+    transform: scale(1.05); 
+  }
+
   footer {
     background-color: #f8e8dc;
     text-align: center;
     padding: 20px;
-    margin-top: 40px;
   }
   
   footer .redes a {
