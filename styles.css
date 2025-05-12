@@ -208,6 +208,13 @@ section, .tips {
   flex: 1; 
 }
 
+.about-us p {
+    max-width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
 
 /* Estilos para pantallas pequeñas (tablets y móviles) */
 @media (max-width: 768px) {
