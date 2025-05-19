@@ -42,7 +42,28 @@ body {
     text-decoration: none;
     color: #5b3e31;
     font-weight: bold;
+    position: relative;
+    transition: color 0.3s;
   }
+  header nav a::after {
+    content: "";
+    display: block;
+    width: 0;
+    height: 2px;
+    background: #5b3e31;
+    transition: width 0.3s;
+    position: absolute;
+    left: 0;
+    bottom: -3px;
+}
+
+header nav a:hover {
+    color: #8c5b4a;
+}
+
+header nav a:hover::after {
+    width: 100%;
+}
   
    p {
     font-size: 16px;
@@ -58,6 +79,7 @@ body {
     padding: 30px;
   }
   
+
   .receta {
     background-color: #fff;
     border-radius: 10px;
@@ -73,12 +95,36 @@ body {
   .receta:hover {
     transform: scale(1.02);
   }
+
+  .receta {
+    opacity: 0;
+    transform: translateY(30px);
+    animation: fadeInUp 0.7s ease forwards;
+}
+
+@keyframes fadeInUp {
+    to {
+        opacity: 1;
+        transform: none;
+    }
+}
   
   .receta img {
     width: 100%;
     display: block;
     height: 40%;
   }
+
+  .receta img, .receta-detalle img {
+    border: 3px solid #f8e8dc;
+    box-shadow: 0 4px 24px rgba(91, 62, 49, 0.15);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.receta img:hover, .receta-detalle img:hover {
+    transform: scale(1.04) rotate(-1deg);
+    box-shadow: 0 8px 32px rgba(91, 62, 49, 0.25);
+}
   
   .receta h2 {
     margin: 15px;
@@ -110,7 +156,7 @@ body {
     width: 40%;
     height: 40%;
     border-radius: 10px; 
-    box-shadow: 0 0 8px rgba(0, 0, 0, 0.1); 
+    box-shadow: 0 4px 24px rgba(91, 62, 49, 0.15);
 }
 
 .receta-detalle .descripcion {
@@ -214,6 +260,7 @@ section, .tips {
     margin-right: auto;
     text-align: center;
 }
+
 
 
 /* Estilos para pantallas pequeñas (tablets y móviles) */
